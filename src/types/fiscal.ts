@@ -25,6 +25,11 @@ export type NfeProduct = {
   quantity: number;
   unitValue: number;
   totalValue: number;
+  bcIcms?: number;
+  valIcms?: number;
+  valIpi?: number;
+  aliqIcms?: number;
+  aliqIpi?: number;
 };
 
 export type NfeTotals = {
@@ -43,6 +48,31 @@ export type NfeTotals = {
   valTotal: number;
 };
 
+export type NfeDuplicata = {
+  number: string;
+  dueDate: string;
+  value: number;
+};
+
+export type NfeTransport = {
+  modFrete: string;
+  name?: string;
+  taxId?: string;
+  ie?: string;
+  address?: string;
+  city?: string;
+  state?: string;
+  vehiclePlate?: string;
+  vehicleState?: string;
+  rntrc?: string;
+  volumeQuantity?: number;
+  volumeSpecies?: string;
+  volumeBrand?: string;
+  volumeNumber?: string;
+  netWeight?: number;
+  grossWeight?: number;
+};
+
 export type NfeData = {
   docType: 'nfe';
   accessKey: string;
@@ -55,8 +85,9 @@ export type NfeData = {
   destinatario: NfeEntity;
   products: NfeProduct[];
   totals: NfeTotals;
+  duplicatas: NfeDuplicata[];
+  transport: NfeTransport;
   infoAdic: string;
-  transp: { modFrete: string };
 };
 
 export type CteData = {
