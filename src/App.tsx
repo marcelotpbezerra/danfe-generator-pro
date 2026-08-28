@@ -20,7 +20,8 @@ import {
   FileJson,
   FileDown,
   Sparkles,
-  CloudCheck,
+  CheckCircle2,
+  Cloud,
   Loader2,
   AlertTriangle,
 } from 'lucide-react';
@@ -209,7 +210,7 @@ export const App: React.FC = () => {
                 <div>
                   <p className="text-[10px] uppercase tracking-wider font-bold text-slate-500">Sincronização</p>
                   <p className="mt-1 text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
-                    <CloudCheck className="w-4 h-4" />
+                    <CheckCircle2 className="w-4 h-4" />
                     <span>{syncStatus === 'synced' ? 'Salvo na API' : 'Processado no Cliente'}</span>
                   </p>
                 </div>
