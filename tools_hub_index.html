@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Ferramentas Fiscais & Utilitários — Marcelo Bezerra</title>
+  <meta name="description" content="Coleção de ferramentas web gratuitas, rápidas e com privacidade total para gestão fiscal, automação comercial e integração de ERPs.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="https://marcelotpbezerra.com.br" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform text-lg">
+          🛠️
+        </div>
+        <div>
+          <h1 class="text-base font-bold text-white group-hover:text-blue-400 transition-colors">Marcelo Bezerra</h1>
+          <p class="text-xs text-slate-400">Hub de Ferramentas & Utilitários</p>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <a href="https://marcelotpbezerra.com.br" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-xl border border-slate-700 transition-all">
+          ← Voltar ao Site Principal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-1 max-w-6xl mx-auto px-6 py-12 w-full space-y-12">
+    <div class="text-center space-y-4 max-w-2xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
+        ✨ 100% Client-Side • Privacidade Total
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+        Ferramentas Gratuitas de Alta Performance
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+        Soluções utilitárias e intuitivas para acelerar a rotina de empresários, contadores, analistas de TI e operadores de varejo e ERP.
+      </p>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Tool 1: DANFE / DACTE -->
+      <div class="relative group bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 rounded-3xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)]">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600/20 text-blue-400 border border-blue-500/30">
+              Fiscal & Logística
+            </span>
+            <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+              Online
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+            DANFE & DACTE Generator Pro
+          </h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Leitor e gerador de DANFE (NF-e Modelo 55) e DACTE (CT-e Modelo 57) a partir de XML ou chave de 44 dígitos. Inclui código de barras Code-128, canhoto de recebimento e download do PDF oficial.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-2 text-[11px] font-mono text-slate-400">
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">NF-e 4.00</span>
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">CT-e 4.00</span>
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">PDF Oficial SEFAZ</span>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <a href="/tools/danfe/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg transition-all group-hover:shadow-blue-500/25">
+            <span>Abrir em Nova Guia</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tool 2: Excel Normalizer -->
+      <div class="relative group bg-slate-900/60 border border-slate-800 hover:border-indigo-500/50 rounded-3xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_40px_rgba(99,102,241,0.15)]">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-600/20 text-indigo-400 border border-indigo-500/30">
+              Dados & ERP
+            </span>
+            <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+              Online
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+            Excel & CSV Header Normalizer
+          </h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Padronizador universal de planilhas de produtos e fornecedores para importação em bancos de dados e ERPs. Converte para snake_case, camelCase e gera scripts SQL e JSON limpos.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-2 text-[11px] font-mono text-slate-400">
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">Excel (.xlsx)</span>
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">CSV UTF-8</span>
+            <span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">Export SQL / JSON</span>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <a href="/tools/excel/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg transition-all group-hover:shadow-indigo-500/25">
+            <span>Abrir em Nova Guia</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Institutional CTA -->
+    <div class="bg-gradient-to-r from-blue-950/40 via-slate-900 to-slate-900 border border-blue-900/40 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+      <div class="space-y-2 text-center sm:text-left">
+        <h4 class="text-xl font-bold text-white">Precisa de soluções sob medida para sua empresa?</h4>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-xl">
+          Consultoria especializada em automação comercial, esteiras fiscais, integrações de ERPs e ecossistemas de Inteligência Artificial autônoma.
+        </p>
+      </div>
+      <a href="https://marcelotpbezerra.com.br/contato/" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-950 font-bold px-6 py-3.5 rounded-2xl transition-all shadow">
+        <span>Falar com Marcelo Bezerra</span>
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-900/40 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Marcelo Bezerra • Todos os direitos reservados.</p>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="https://github.com/marcelotpbezerra" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span>•</span>
+        <a href="https://git.marcelotpbezerra.com.br" target="_blank" class="hover:text-white transition-colors">Git Soberano</a>
+        <span>•</span>
+        <a href="https://linktr.ee/marcelotpbezerra" target="_blank" class="hover:text-white transition-colors">Linktree</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
